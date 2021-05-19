@@ -6,8 +6,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="stylee.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 		<script src="script.js"></script>
+		<script>
+			function showHint(str) {
+			  if (str.length == 0) { 
+			    document.getElementById("txtHint").innerHTML = "";
+			    return;
+			  } else {
+			    var xmlhttp = new XMLHttpRequest();
+			    xmlhttp.onreadystatechange = function() {
+			      if (this.readyState == 4 && this.status == 200) {
+			        document.getElementById("txtHint").innerHTML = this.responseText;
+			      }
+			    }
+			    xmlhttp.open("GET", "gethint.php?q="+str, true);
+			    xmlhttp.send();
+			  }
+			}
+		</script>
 		<style type="text/css">
 		    ruby{
 		        font-size: 60px;
@@ -50,10 +67,11 @@
 		</script>
 
 		<div class="header">
-			<form action="/ShpalljePune.html">
-		    	<input type="text" id="Location-Category" onkeyup="search2()" name="Location-Category" style="width: 330px;
-    			height: 30px;" placeholder="*Shkruani vendin apo pozitën që dëshironi të kërkoni" autocomplete="of" autofocus>
-    		</form>
+				<form action=" ">
+				    <label for="fname">Emri:</label>
+		  			<input type="text" id="fname" name="fname" onkeyup="showHint(this.value)"><br>
+	      		</form>
+			<p><br>Suggestions: <span id="txtHint"></span></p>
 		</div>
 		<div class="body" >
 			<ruby>
