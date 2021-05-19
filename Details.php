@@ -21,7 +21,7 @@
 		      <li><a href="index.html">Kryefaqja</a></li>
 		      <li><a href="cv.html">Krijo CV</a></li>
 		      <li><a href="quiz.html">Kuiz</a></li>
-		      <li><a href="shpalljePune.html">Shpallje</a></li>
+		      <li><a href="shpalljePune.php">Shpallje</a></li>
 		      <li><a href="keshilla.html">K&eumlshilla</a></li>
 		      <li><a href="index.html#aboutus">Rreth nesh</a></li>
 		    </ul>
@@ -44,22 +44,22 @@
 					<h1 id="itemCategory" style="margin-bottom:20px">
 					</h1>
 					<div class="details">
-					<a id="itemName" class="details-container1">
-						<i class="fa fa-building" style="color: green;">
-						</i>
-					</a>
-					<a id="itemLocation" class="details-container1">
-						<i class="fa fa-map-marker" style="color: green;">
+						<a id="itemName" class="details-container1">
+							<i class="fa fa-building" style="color: green;">
+							</i>
+						</a>
+						<a id="itemLocation" class="details-container1">
+							<i class="fa fa-map-marker" style="color: green;">
 
-						</i>
-					</a>
-					<a class="details-container1">
-						<i class="fa fa-clock-o" style="color: green;">
+							</i>
+						</a>
+						<a class="details-container1">
+							<i class="fa fa-clock-o" style="color: green;">
 
-						</i>
-						Full Time
-					</a>
-				 </div>
+							</i>
+							Full Time
+						</a>
+					</div>
 				</div>
 				
 			</div>
@@ -96,7 +96,7 @@
 			          <li> <a href="index.html">Kryefaqja</a> </li>
 			          <li> <a href="cv.html">Krijo CV</a> </li>
 			          <li> <a href="quiz.html">Kuiz</a> </li>
-			          <li> <a href="shpalljePune.html">Shpallje</a> </li>
+			          <li> <a href="shpalljePune.php">Shpallje</a> </li>
 			          <li> <a href="keshilla.html">K&eumlshilla</a> </li>
 			        </ul>
 		      	</li>
