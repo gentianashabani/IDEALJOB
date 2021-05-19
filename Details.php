@@ -2,21 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Puna Ime Ideale</title>
+		<title>Puna Ime Ideale </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="stylee.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="script.js"></script>
-		<style type="text/css">
-		    ruby{
-		        font-size: 60px;
-		    }
-		</style>
+		
+		<link rel="stylesheet" href="Details.css">
+
+		<script src="Details.js"></script>
+
 	</head>
 
-	<body onload="initList()" id="body">
-
+	<body onload="makeList()" id="body">
 		<header>
 		  <nav>
 		    <input id="nav-toggle" type="checkbox">
@@ -25,7 +21,7 @@
 		      <li><a href="index.html">Kryefaqja</a></li>
 		      <li><a href="cv.html">Krijo CV</a></li>
 		      <li><a href="quiz.html">Kuiz</a></li>
-		      <li><a href="shpalljePune.html">Shpallje</a></li>
+		      <li><a href="shpalljePune.php">Shpallje</a></li>
 		      <li><a href="keshilla.html">K&eumlshilla</a></li>
 		      <li><a href="index.html#aboutus">Rreth nesh</a></li>
 		    </ul>
@@ -37,32 +33,49 @@
 		  </nav>
 		</header>
 
-		<script>
-			const successCallback = (position) => {
-				console.log(position);
-			};
 
-			const errorCallback = (error) => {
-				console.error(error);
-			};
 
-			navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-		</script>
+		<div class="cover-container">
+			<div class="conatiner-1">
+				<div class="logo-container">
+					<img id="itemImage" style="height:150px; width: 150px; object-fit: contain;"/>
+				</div>
+				<div>
+					<h1 id="itemCategory" style="margin-bottom:20px">
+					</h1>
+					<div class="details">
+						<a id="itemName" class="details-container1">
+							<i class="fa fa-building" style="color: green;">
+							</i>
+						</a>
+						<a id="itemLocation" class="details-container1">
+							<i class="fa fa-map-marker" style="color: green;">
 
-		<div class="header">
-			<form action="/ShpalljePune.html">
-		    	<input type="text" id="Location-Category" onkeyup="search2()" name="Location-Category" style="width: 330px;
-    			height: 30px;" placeholder="*Shkruani vendin apo pozitën që dëshironi të kërkoni" autocomplete="of" autofocus>
-    		</form>
+							</i>
+						</a>
+						<a class="details-container1">
+							<i class="fa fa-clock-o" style="color: green;">
+
+							</i>
+							Full Time
+						</a>
+					</div>
+				</div>
+				
+			</div>
 		</div>
-		<div class="body" >
-			<ruby>
-		    	<rp>(</rp><rt>Premium</rt><rp>)</rp>
-		    </ruby>
 
-			<div class="card-container" id="card-container"></div>	
+		<div class="body">
+			<div class="div">
+					<h3>Përshkrimi:</h3>
+					<p></p>
+					<div class="div1">
+						<div class="body-container" id="body-container">	
+					</div>
+				</div>
+			</div>
 		</div>
-		
+
 		<footer class="footer">
 		    <div class="footer-left">
 		      <img src="images/logo1.png" alt="logo">
@@ -83,13 +96,13 @@
 			          <li> <a href="index.html">Kryefaqja</a> </li>
 			          <li> <a href="cv.html">Krijo CV</a> </li>
 			          <li> <a href="quiz.html">Kuiz</a> </li>
-			          <li> <a href="shpalljePune.html">Shpallje</a> </li>
+			          <li> <a href="shpalljePune.php">Shpallje</a> </li>
 			          <li> <a href="keshilla.html">K&eumlshilla</a> </li>
 			        </ul>
 		      	</li>
 
 			    <li class="features">
-			        <h2>Na Kontaktoni</h2>
+			        <h2>Na Kontakto</h2>
 
 			        <ul class="box">
 			          <li> <a
@@ -103,7 +116,6 @@
 		    <div class="footer-bottom">
 		      <p>All Rights Reserved By &copy; UP-students 2021</p>
 		    </div>
-	    </footer>	
+	    </footer> 
 	</body>
 </html>
-

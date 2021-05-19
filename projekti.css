@@ -1,0 +1,35 @@
+*{
+    background-image: url(img.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-size: 100%;
+    font-family: 'Slabo', cursive;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.book{
+    border-radius: 100rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(28,26, 26);
+    background: linear-gradient(90deg, #1AAB8A,#32be8f);
+    
+}
+.book:hover{
+    cursor: pointer;
+    box-shadow: 0 1rem 1.4rem 0 #0d5e50;
+    transition:transform 800ms ;
+    transform: scale(1.1);
+}

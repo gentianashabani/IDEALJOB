@@ -2,17 +2,38 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Puna Ime Ideale </title>
+		<title>Puna Ime Ideale</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylee.css">
 		
-		<link rel="stylesheet" href="Details.css">
-
-		<script src="Details.js"></script>
-
+		<script src="script.js"></script>
+		<script>
+			function showHint(str) {
+			  if (str.length == 0) { 
+			    document.getElementById("txtHint").innerHTML = "";
+			    return;
+			  } else {
+			    var xmlhttp = new XMLHttpRequest();
+			    xmlhttp.onreadystatechange = function() {
+			      if (this.readyState == 4 && this.status == 200) {
+			        document.getElementById("txtHint").innerHTML = this.responseText;
+			      }
+			    }
+			    xmlhttp.open("GET", "gethint.php?q="+str, true);
+			    xmlhttp.send();
+			  }
+			}
+		</script>
+		<style type="text/css">
+		    ruby{
+		        font-size: 60px;
+		    }
+		</style>
 	</head>
 
-	<body onload="makeList()" id="body">
+	<body onload="initList()" id="body">
+
 		<header>
 		  <nav>
 		    <input id="nav-toggle" type="checkbox">
@@ -33,49 +54,33 @@
 		  </nav>
 		</header>
 
+		<script>
+			const successCallback = (position) => {
+				console.log(position);
+			};
 
+			const errorCallback = (error) => {
+				console.error(error);
+			};
 
-		<div class="cover-container">
-			<div class="conatiner-1">
-				<div class="logo-container">
-					<img id="itemImage" style="height:150px; width: 150px; object-fit: contain;"/>
-				</div>
-				<div>
-					<h1 id="itemCategory" style="margin-bottom:20px">
-					</h1>
-					<div class="details">
-					<a id="itemName" class="details-container1">
-						<i class="fa fa-building" style="color: green;">
-						</i>
-					</a>
-					<a id="itemLocation" class="details-container1">
-						<i class="fa fa-map-marker" style="color: green;">
+			navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+		</script>
 
-						</i>
-					</a>
-					<a class="details-container1">
-						<i class="fa fa-clock-o" style="color: green;">
-
-						</i>
-						Full Time
-					</a>
-				 </div>
-				</div>
-				
-			</div>
+		<div class="header">
+				<form action=" ">
+				    <label for="fname">Emri:</label>
+		  			<input type="text" id="fname" name="fname" onkeyup="showHint(this.value)"><br>
+	      		</form>
+			<p><br>Suggestions: <span id="txtHint"></span></p>
 		</div>
+		<div class="body" >
+			<ruby>
+		    	<rp>(</rp><rt>Premium</rt><rp>)</rp>
+		    </ruby>
 
-		<div class="body">
-			<div class="div">
-					<h3>Përshkrimi:</h3>
-					<p></p>
-					<div class="div1">
-						<div class="body-container" id="body-container">	
-					</div>
-				</div>
-			</div>
+			<div class="card-container" id="card-container"></div>	
 		</div>
-
+		
 		<footer class="footer">
 		    <div class="footer-left">
 		      <img src="images/logo1.png" alt="logo">
@@ -102,7 +107,7 @@
 		      	</li>
 
 			    <li class="features">
-			        <h2>Na Kontakto</h2>
+			        <h2>Na Kontaktoni</h2>
 
 			        <ul class="box">
 			          <li> <a
@@ -116,6 +121,7 @@
 		    <div class="footer-bottom">
 		      <p>All Rights Reserved By &copy; UP-students 2021</p>
 		    </div>
-	    </footer> 
+	    </footer>	
 	</body>
 </html>
+
