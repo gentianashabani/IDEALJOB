@@ -21,7 +21,7 @@
         <h3 class="header-three">Fusha e interesit 1 NATYRA</h3>
 
         <div id="question-1">
-            <p style="font-size:larger;">1.Me dëshirë jam në natyrë dhe dal sa herë të mundem. </p>
+            <p style="font-size:larger;">1.Me dëshirë mund te qëndroj në natyrë dhe dal sa herë që mundem. </p>
             <form id="form-question-1">
                 <button id="first-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('first')">Nuk më përshtatet</button>  
                 <button id="first-choice-2" data-points="1" onclick="addPoints('first-choice-2'); disableButtons('first')">Përshtatet pak</button>
@@ -34,7 +34,7 @@
         <hr>
 
         <div id="question-2">
-            <p style="font-size:larger;">2.Në shkollë e preferoj Biologjinë dhe lëndën për ambientin.</p>
+            <p style="font-size:larger;">2.Në shkollë e preferoj Biologjinë dhe lëndën Njeriu dhe Natyra.</p>
             <form id="form-question-2">
                 <button id="second-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('second')">Nuk më përshtatet</button>  
                 <button id="second-choice-2" data-points="1" onclick="addPoints('second-choice-2'); disableButtons('second')">Përshtatet pak</button>
@@ -47,7 +47,7 @@
         <hr>
 
         <div id="question-3">
-            <p style="font-size:larger;">3.Dalloj shumë bimë në natyrë.</p>
+            <p style="font-size:larger;">3.I dalloj shumicën e llojeve të bimëve në natyrë.</p>
             <form id="form-question-3">
                 <button id="third-choice-1" data-points="0" onclick="addPoints('third-choice-1'); disableButtons('third')">Nuk më përshtatet</button>
                 <button id="third-choice-2" data-points="1" onclick="addPoints('third-choice-2'); disableButtons('third')">Përshtatet pak</button>
@@ -86,7 +86,7 @@
         <hr>
 
         <div id="question-3">
-            <p style="font-size:larger;">6.Me dëshirë ndihmoj edhe në punë më të rënda.</p>
+            <p style="font-size:larger;">6.Me dëshirë ndihmoj edhe në punë më të rënda që kanë të bëjnë me natyrën.</p>
             <form id="form-question-3">
                 <button id="sixth-choice-1"data-points="0" onclick="addPoints('sixth-choice-1'); disableButtons('sixth')">Nuk më përshtatet</button>
                 <button id="sixth-choice-2"data-points="1" onclick="addPoints('sixth-choice-2'); disableButtons('sixth')">Përshtatet pak</button>
@@ -125,7 +125,7 @@
         <hr>
 
         <div id="question-3">
-            <p style="font-size:larger;">9.Interesohem për kultivimin e bimëve.</p>
+            <p style="font-size:larger;">9.Interesohem për kultivimin dhe mbrojtjen e bimëve.</p>
             <form id="form-question-3">
                 <button id="ninth-choice-1"data-points="0" onclick="addPoints('ninth-choice-1'); disableButtons('ninth')">Nuk më përshtatet</button>
                 <button id="ninth-choice-2"data-points="1" onclick="addPoints('ninth-choice-2'); disableButtons('ninth')">Përshtatet pak</button>
@@ -138,7 +138,7 @@
         <hr>
 
         <div id="question-3">
-            <p style="font-size:larger;">10. Sillem mirë me kafshët.</p>
+            <p style="font-size:larger;">10.Më pëlqejnë kafshët.</p>
             <form id="form-question-3">
                 <button id="tenth-choice-1"data-points="0" onclick="addPoints('tenth-choice-1'); disableButtons('tenth')">Nuk më përshtatet</button>
                 <button id="tenth-choice-2"data-points="1" onclick="addPoints('tenth-choice-2'); disableButtons('tenth')">Përshtatet pak</button>
@@ -164,7 +164,7 @@
         <hr>
 
         <div id="question-3">
-            <p style="font-size:larger;">12.Kënaqem kur e lidhë një tufë lulesh </p>
+            <p style="font-size:larger;">12.Ndjehem mirë kur e lidhë një tufë lulesh </p>
             <form id="form-question-3">
                 <button id="twelfth-choice-1"data-points="0" onclick="addPoints('twelfth-choice-1'); disableButtons('twelfth')">Nuk më përshtatet</button>
                 <button id="twelfth-choice-2"data-points="1" onclick="addPoints('twelfth-choice-2'); disableButtons('twelfth')">Përshtatet pak</button>
@@ -223,16 +223,14 @@
     
     <div class="contanier">
         <div id=" home" class="flex-column flex-center">
-            <a href="game2.html" class="btn">Vazhdoni</a>
+            <a href="game2.php" class="btn">Vazhdoni</a>
         </div>
     </div>
 
+    <div class="audio" style="width:110px; margin-left:auto; position:relative;">
+        <audio controls autostart autoplay loop style="width:100%;"> <source src="audio2.mp3">Ky shfletues nuk e mbështet etiketën audio</audio>
+        </div>
     
-      <div class="audio" style="width:110px; margin-left:auto; position:relative;">
-    <audio controls autoplay loop style="width:100%;">
-      <source src="audio2.mp3">Ky shfletues nuk e mbështet etiketën audio
-    </audio>
-  </div>
 
     <script src="game.js"></script>
 
