@@ -32,8 +32,9 @@
   </header>
 
   <div class="intervista1">
-    <?php 
-      echo "<h1>Prezantimi gjatë një interviste për punë</h1>";
+     <?php 
+    define("pr", "<h1>Prezantimi gjatë një interviste për punë</h1>");
+    echo pr;
      ?>
        <p>
       <img class="inimg" src="img/interview1.jpg" alt="intervista1">
