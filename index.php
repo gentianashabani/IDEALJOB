@@ -425,7 +425,7 @@
   </section>
 
   <div class="kontakti">
-    <form action="kontakto.html">
+    <form action="kontakto.php">
       <input type="submit" value="Na kontaktoni" id="kontaktiInput" />
     </form>
   </div>
