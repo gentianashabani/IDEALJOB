@@ -67,7 +67,7 @@
     <div class="logo">Puna ime ideale</div>
     <ul class="links">
       <li><a href="index.php">Kryefaqja</a></li>
-      <li><a href="cv.php" target="_blank">Krijo CV</a></li>
+      <li><a href="cv.html" target="_blank">Krijo CV</a></li>
       <li><a href="quiz.php" target="_blank">Kuiz</a></li>
       <li><a href="shpalljePune.php">Shpallje</a></li>
       <li><a href="keshilla.php">K&eumlshilla</a></li>
@@ -131,38 +131,53 @@
     <h1 id="ph1">Profesionet m&euml t&euml k&eumlrkuara n&euml Kosov&euml</h1>
     <article class="puna1">
       <h2 id="punet">Industria e përpunimit të drurit</h2> <br>
-      <p>Në kuadër të kësaj industrue, në Kosovë operon një numër i madh kompanisht, gjashtë prej të cilave realizojnë qarkullim vjetor prej 1 deri 6 milionë eurosh. Me këtë mund të shihet se sa fitimprurës është ky lloj i biznesit. </p>
+      <?php
+        $myfile = fopen("IPDrurit.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("IPDrurit.txt"));
+        fclose($myfile);
+      ?>
+      <br><br>
     </article>
 
     <article class="puna1">
       <h2 id="punet">Tekonlogjia Informative</h2><br>
-      <p> <abbr title="Information Technology">IT</abbr>-ja është një nga industritë më të fuqishme aktuale në botë, e cila ka lulëzuar falë zhvillimit të shpejtë të sektorit të kibernetikës. Sektori i IT në të shumtën e rasteve është në duart e të
-        rinjve. Andaj, Kosova ka një potencial unik për ta zhvilluar edhe më tej këtë fushë. Profesionistët e IT-së punojnë në disa lëmi, si: dizajnimi i softuerëve për institucione të ndryshme, universitete, kompani private, banka, kompani të
-        sigurimit; dizajnim dhe mirëmbajtje të uebfaqeve, komunikim me njerëzit, etj. Nevoja për ekspertë të IT-së në Kosovë pritet të rritet për shkak të progresit teknologjik që Kosova do të ketë si rezultat i numrit në rritje të kompanive operuese
-        vendore.
-      </p>
+        <?php
+        $myfile = fopen("IT.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("IT.txt"));
+        fclose($myfile);
+      ?>
+      <br><br>
     </article>
 
     <article class="puna1">
       <h2 id="punet">Agrobiznesi</h2>
       <br>
-      <p> Tashmë veçse është bërë një aktivitet fitimprurës për shumë familje kosovare, ne vecanti familjet te cilat jetojne në zonat rurale ku papunësia është më e madhe. Mundësitë për të punuar në bujqësi po rriten paralelisht me rritjen e kërkesës
-        për produkte të freskëta vendore. Zakonisht fermat e vogla me lopë që shesin qumësht ose rrisin lopë për mish, pastaj të tilla që kultivojnë pula për vezë, qendra të grumbullimit dhe përpunimit dhe shume te tjera kanë potencial të mahnitshëm
-        për të qenë të suksesshme. Kurse në anën tjetër, bletaria, kultivimi dhe përpunimi i pemëve dhe perimeve apo akumulimi i frutave të pyllit, janë gjithashtu mundësi për biznese potenciale, përmes të cilave shumë individë apo familje mund të
-        rrisin të ardhurat.</p>
+      <?php
+        $myfile = fopen("Agrobiznesi.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("Agrobiznesi.txt"));
+        fclose($myfile);
+      ?>
+      <br><br>
     </article>
 
     <article class="puna1">
       <h2 id="punet">Turizmi</h2><br>
-      <p>Vendet e vogla, ekonominë e tyre e kanë të bazuar kryesisht në aktivitetet turistike. Me karakteristika vendore tejet të përshtatshme për zhvillim të turizmit dhe hotelierisë, në një të ardhme jo të largët, një pjesë e mirë e ekonomisë do të
-        orientohet në këtë fushë. Me kapacitetet aktuale që posedon Kosova, oferta turistike do të rritet dukshëm në të ardhmen.</p>
+      <?php
+        $myfile = fopen("Turizmi.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("Turizmi.txt"));
+        fclose($myfile);
+      ?>
+      <br><br>
     </article>
 
     <article class="puna1">
       <h2 id="punet">Punët teknike</h2><br>
-      <p>Në Kosovë çdo ditë e më shumë po rritet nevoja për saldues dhe molerë të trajnuar. Të rinjtë aktualisht nuk kanë interes në profesione të tilla për arsye të ndryshme, por çka e bën këtë fushë edhe me të veçantë, është lajmi i mirë se
-        kompanitë vendore dhe ndërkombëtare që operojnë në vendin tonë, ne te ardhmen do të kenë nevojë për më shumë njerëz me shkathtësi të teknike të certifikuara. Gjithashtu, të tjera profesione për t’u marrë në konsideratë dhe që kërkojnë arsimim
-        të lartë janë: sociologët, psikologët, përpunuesit e të dhënave, hulumtuesit, programerët, statisticienët, etj.</p>
+      <?php
+        $myfile = fopen("PunetTeknike.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("PunetTeknike.txt"));
+        fclose($myfile);
+      ?>
+      <br><br>
     </article>
 
   </article>
@@ -361,15 +376,15 @@
     </div>
     <div class="Row">
       <div class="profili">
-        <h4>Gentrim <br> Canolli</h4>
+        <h4>Florentinë <br> Dërmaku</h4>
 
-        <img src="img/antari1.jpg" alt="">
+        <img src="img/antari2.jpg" alt="">
         <div class="socials2">
-          <a href="https://www.facebook.com/gentrim.canolli.3/"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/genttrim_/"><i class="fa fa-instagram"></i></a>
-          <a href="mailto:gentrim.canolli@student.uni-pr.edu"><i class="fa fa-google"></i></a>
+          <a href="https://www.facebook.com/FlorentineDermaku"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/florentinadermaku/"><i class="fa fa-instagram"></i></a>
+          <a href="mailto:florentin.dermaku@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">Kryefaqen, K&eumlshilla</span></small>
+
       </div>
 
 
@@ -382,7 +397,7 @@
           <a href="https://www.instagram.com/festina.g/"><i class="fa fa-instagram"></i></a>
           <a href="mailto:festina.gashi6@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);;">Krijo CV, K&eumlshilla</span></small>
+
       </div>
 
       <div class="profili">
@@ -393,7 +408,7 @@
           <a href="https://www.instagram.com/gentianamejzini/"><i class="fa fa-instagram"></i></a>
           <a href="mailto:gentiana.mejzini@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);;">Kuiz</span></small>
+
       </div>
 
       <div class="profili">
@@ -404,13 +419,13 @@
           <a href="https://www.instagram.com/gentianashabani02/"><i class="fa fa-instagram"></i></a>
           <a href="mailto:gentiana.shabani3@student.uni-pr.edu"><i class="fa fa-google"></i></a>
         </div>
-        <small>Krijoi dhe dizajnoi <span style="color:rgba(130,190,232,1);">Shpallje</span></small>
+
       </div>
     </div>
   </section>
 
   <div class="kontakti">
-    <form action="kontakto.php">
+    <form action="kontakto.html">
       <input type="submit" value="Na kontaktoni" id="kontaktiInput" />
     </form>
   </div>
@@ -450,11 +465,11 @@
         <h2>Linqet</h2>
 
         <ul class="box">
-          <li> <a href="index.html">Kryefaqja</a> </li>
+          <li> <a href="index.php">Kryefaqja</a> </li>
           <li> <a href="cv.html">Krijo CV</a> </li>
-          <li> <a href="quiz.html">Kuiz</a> </li>
-          <li> <a href="shpalljePune.html">Shpallje</a> </li>
-          <li> <a href="keshilla.html">K&eumlshilla</a> </li>
+          <li> <a href="quiz.php">Kuiz</a> </li>
+          <li> <a href="shpalljePune.php">Shpallje</a> </li>
+          <li> <a href="keshilla.php">K&eumlshilla</a> </li>
         </ul>
       </li>
 
