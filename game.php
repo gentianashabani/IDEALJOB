@@ -69,6 +69,7 @@
                 <button id="fourth-choice-4"data-points="3" onclick="addPoints('fourth-choice-4'); disableButtons('fourth')">Përshtatet shumë</button>
             </form>
         </div>
+        //
 
         <hr>
 
