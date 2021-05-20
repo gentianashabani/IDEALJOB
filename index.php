@@ -66,10 +66,10 @@
     <input id="nav-toggle" type="checkbox">
     <div class="logo">Puna ime ideale</div>
     <ul class="links">
-      <li><a href="index.html">Kryefaqja</a></li>
-      <li><a href="cv.html" target="_blank">Krijo CV</a></li>
-      <li><a href="quiz.html" target="_blank">Kuiz</a></li>
-      <li><a href="shpalljePune.html">Shpallje</a></li>
+      <li><a href="index.php">Kryefaqja</a></li>
+      <li><a href="cv.php" target="_blank">Krijo CV</a></li>
+      <li><a href="quiz.php" target="_blank">Kuiz</a></li>
+      <li><a href="shpalljePune.php">Shpallje</a></li>
       <li><a href="keshilla.php">K&eumlshilla</a></li>
       <li><a href="#aboutus">Rreth nesh</a></li>
     </ul>
@@ -410,7 +410,7 @@
   </section>
 
   <div class="kontakti">
-    <form action="kontakto.html">
+    <form action="kontakto.php">
       <input type="submit" value="Na kontaktoni" id="kontaktiInput" />
     </form>
   </div>
