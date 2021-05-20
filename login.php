@@ -28,6 +28,10 @@
             background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
             background-size: cover;
         }
+
+        a{
+            color: white;
+        }
         
         .container {
             max-width: 400px;
@@ -177,10 +181,10 @@
     <form method="post" action="index.html" id="contact">
     <h4 style="font-size: 20px;  color: white;">Kyquni për të vazhduar! </h4>
     <fieldset>
-            <input type="text" name="email" placeholder="Email" value="">
+        <input type="text" name="email" placeholder="*Email" value="">
     </fieldset>
     <fieldset>
-            <input type="password" name="password" placeholder="Password" value="">
+        <input type="text" name="password" placeholder="*Password" value="">
     </fieldset>
             <a href='#'> Forgot Password ?</a>
             <input type="submit" value="Login" />
