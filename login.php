@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
             font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
         }
-        
+    
         body {
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-weight: 300;
@@ -155,11 +155,27 @@
             border-color: darkred !important;
         }
     </style>
+    <?php
+    $con=mysqli_connect("localhost", "root", "", "logindb");
+    if(isset($_POST['log'])){
+        $username=mysqli_real_escape_string($con,$_POST['email']);
+        $passwd=mysqli_real_escape_string($con,$_POST['password']);
+        if($surname!="" && $passwd!=""){
+            $sql="SELECT id FROM login WHERE username='$username' and passwd='$passwd'";
+            $result=mysqli_query($con,$sql);
+            $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+            $count=mysqli_num_rows($result);
+            if($count==1){
+                header("location: index.php");
+            }
+        }
+    } 
+    ?>
 </head>
 <body>
     <div class="container">
-    <form method="post" action="kontakto.php" id="contact">
-    <h4 style="font-size: 20px;  color: white;">Kyquni për të vazhduar tutje! </h4>
+    <form method="post" action="index.html" id="contact">
+    <h4 style="font-size: 20px;  color: white;">Kyquni për të vazhduar! </h4>
     <fieldset>
             <input type="text" name="email" placeholder="Email" value="">
     </fieldset>
