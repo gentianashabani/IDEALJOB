@@ -9,6 +9,15 @@
         return $this->name;
     }
 }
+class fusha extends kuiz {
+    public function message() {
+      echo "A jeni gati ta vlerësoni veten? "; 
+    }
+  }
+$fusha1= new fusha("fusha1");
+$fusha1->message();
+
+
 $quiz = new kuiz();
 $quiz->set_name('Një kuiz i thjeshtë për tu orientuar në karrierë');
 echo $quiz->get_name();
@@ -16,6 +25,7 @@ echo '
 <span style="color: black;">
 ';
 ?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -51,4 +61,3 @@ echo '
    
 </body>
 </html>
-
