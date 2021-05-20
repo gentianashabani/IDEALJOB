@@ -72,6 +72,7 @@
       <li><a href="shpalljePune.php">Shpallje</a></li>
       <li><a href="keshilla.php">K&eumlshilla</a></li>
       <li><a href="#aboutus">Rreth nesh</a></li>
+      <li><a href="login.php">Login</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -112,7 +113,14 @@
       </div>
       <img src="img/img1.jpg" style="width: 100%; height: 100%;">
     </div>
-
+   
+<div class="myslide fade">
+      <div class="txt">
+        <h1>Log in</h1>
+        <p>Kyqu !<br>M&eumlso shum&eumlçka rreth intervistave t&euml pun&eumls etj...</p>
+      </div>
+      <img src="img/img1.jpg" style="width: 100%; height: 100%;">
+    </div>
 
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -470,6 +478,7 @@
           <li> <a href="quiz.php">Kuiz</a> </li>
           <li> <a href="shpalljePune.php">Shpallje</a> </li>
           <li> <a href="keshilla.php">K&eumlshilla</a> </li>
+          <li> <a href="login.php">Login</a> </li>
         </ul>
       </li>
 
