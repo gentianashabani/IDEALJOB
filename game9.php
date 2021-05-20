@@ -1,3 +1,12 @@
+<?php
+ob_start();
+try {
+    #tregon erroret nese ka 
+} catch (Exception $e) {
+  ob_end_clean();
+  displayErrorPage($e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,8 +37,20 @@
         </h2>
 
         <br>
-        <h3 class="header-three">Fusha e interesit 9 Gjuha, letërsia, lajmet, teatri, muzika, arti dhe shkencat humane</h3>
+        <?php
 
+function test() {
+    try {
+        throw new Exception('Fusha');
+    } catch (Exception $e) {
+        return 'catch';
+    } finally {
+        return '<p> <font size = 5><b>Fusha e interesit 9 Gjuha, Letërsia, Lajmet, Teatri,  Muzika, Arti dhe Shkencat Humane</font></b></font> </p>';
+    }
+}
+
+echo test("");
+?>
         <div id="question-1">
         <?php  echo "<p> <font size = 4>1.Gjuha amtare është lënda më e preferuar e imja.</font> </p>";?>
             <form id="form-question-1">
@@ -244,8 +265,6 @@
         <div id=" home" class="flex-column flex-center">
             <a href="projekti.php" class="btn">Filloni përsëri</a>
         </div>
-    
-
 
 
     
