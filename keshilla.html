@@ -32,8 +32,10 @@
   </header>
 
   <div class="intervista1">
-    <h1>Prezantimi gjatë një interviste për punë</h1>
-    <p>
+    <?php 
+      echo "<h1>Prezantimi gjatë një interviste për punë</h1>";
+     ?>
+       <p>
       <img class="inimg" src="img/interview1.jpg" alt="intervista1">
       Intervista është proces i komunikimit në dy drejtime me rekrutuesit dhe aplikuesit. Në
       këtë fazë të procesit të selektimit, udhëzimet, personaliteti dhe rezultatet kanë rëndësi të
@@ -49,37 +51,50 @@
   <hr>
 
   <div class="intervista2">
-    <h1>Si duhet t&euml visheni n&euml nj&euml intervist&euml pune </h1>
+    <?php 
+      echo "<h1>Si duhet t&euml visheni n&euml nj&euml intervist&euml pune </h1>";
+     ?>
     <figure>
       <img src="img/interview2.png" alt="veshje" width="100%" id="veshje">
       <figcaption> <mark style="background: rgba(21, 134, 189, 1); color:white;">Disa lloje t&euml veshjeve</mark></figcaption>
     </figure>
     <br>
-    <p>Ndonëse për shumë njerëz veshëmbathja në një intervistë pune nuk përbën diçka të një rëndësie të veçantë, ndër përshtypjet e para të një punëdhënësi është edhe stili i veshjes.
-      Kësisoj, krahas aftësive profesionale, veshja luan një rol të rëndësishëm po ashtu. Ka shumë opsione të cilat mund t'i konsideroni për t’i veshur në një intervistë pune, varësisht prej kompanisë ku keni aplikuar.</p>
+    <?php 
+echo "<p>Ndonëse për shumë njerëz veshëmbathja në një intervistë pune nuk përbën diçka të një rëndësie të veçantë, ndër përshtypjet e para të një punëdhënësi është edhe stili i veshjes.
+      Kësisoj, krahas aftësive profesionale, veshja luan një rol të rëndësishëm po ashtu. Ka shumë opsione të cilat mund t'i konsideroni për t’i veshur në një intervistë pune, varësisht prej kompanisë ku keni aplikuar.</p>";
+        
+
+     ?>
+    
     <br>
     <div class="veshjeMF">
-      <ol type="i">
-        <li id="orderL"> <strong>P&eumlr meshkuj: </strong></li>
-        <ul>
-          <li>Kostum me ngjyra të mbyllta si e zezë apo e hirtë</li>
-          <li>Këmishë me mëngë të gjata, me ngjyrë të bardhë ose e kombinuar me kostumin</li>
-          <li>Rrip lëkure</li>
-          <li>Kravatë</li>
-          <li>Çorape të errëta dhe këpucë lëkure</li>
-        </ul>
-        <br>
+    
+        
+        <?php 
+        $m = "<b>-P&eumlr meshkuj<br></b>";
+          $f = str_replace("meshkuj" , "vajza" ,$m);
+          echo $m;
+          echo "<ul>";
+          echo "<li>Kostum me ngjyra të mbyllta si e zezë apo e hirtë<br>";
+          echo "<li>Këmishë me mëngë të gjata, me ngjyrë të bardhë ose e kombinuar me kostumin<br>";
+          echo "<li>Rrip lëkure<br>";
+          echo "<li>Kravatë<br>";
+          echo "<li>Çorape të errëta dhe këpucë lëkure<br>";
+          echo "</ul><br>";
+          echo $f;
+            echo "<ul>";
+          echo "<li>Veshje me ngjyrë të zezë ose gri <br>";
+          echo "<li>Kostume nën gjunjë<br>";
+          echo "<li>Bluzë të kombinuar me kostumin<br>";
+          echo "<li>Këpucë më zyrtare<br>";
+          echo "<li>Grim të lehtë (nëse përdorni)<br>";
+          echo "<li>Jo shumë bizhuteri<br>";
+          echo "</ul><br>"; 
+          ?>
+      
+    </div>
+  </div>
 
-        <li id="orderL"> <strong>P&eumlr fem&eumlra:</strong></li>
-        <ul>
-          <li>Veshje me ngjyrë të zezë ose gri </li>
-          <li>Kostume nën gjunjë</li>
-          <li>Bluzë të kombinuar me kostumin</li>
-          <li>Këpucë më zyrtare</li>
-          <li>Grim të lehtë (nëse përdorni)</li>
-          <li>Jo shumë bizhuteri</li>
-        </ul>
-      </ol>
     </div>
   </div>
   <hr>
