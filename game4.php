@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,24 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="game4.css">
 </head>
+
 <body>
 
     <div class="container">
+
         <h1 class="header-one">Klikoni në përgjigjjen që ju përshtatet... </h1>
-          <h2 class="header-two" >   
-            *Nuk më përshtatet - 0 Pikë<br>
-            *Përshtatet pak - 1 Pikë<br>
-            *Përshtatet - 2 Pikë<br>
+          <h2 class="header-two" >  
+            
+            *Nuk më përshtatet- 0 Pikë
+            <br>
+
+            *Përshtatet pak- 1 Pikë
+            <br>
+
+            *Përshtatet- 2 Pikë
+            <br>
+
             *Përshtatet shumë - 3 Pikë
         </h2>
+
         <br>
-        <h3 class="header-three">Fusha e interesit 1 NATYRA</h3>
+        <h3 class="header-three">Fusha e interesit 4 Ndërtimtaria, teknik shtëpiake, përpunimi i drurit</h3>
 
         <div id="question-1">
-        
-           <?php  echo "<p> <font size = 4>1.Me dëshirë mund te qëndroj në natyrë dhe dal sa herë që mundem.</font> </p>";?>
+        <?php  echo "<p> <font size = 4>1.Me kënaqësi punoj me vegla.</font> </p>";?>
             <form id="form-question-1">
                 <button id="first-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('first')">Nuk më përshtatet</button>  
                 <button id="first-choice-2" data-points="1" onclick="addPoints('first-choice-2'); disableButtons('first')">Përshtatet pak</button>
@@ -36,7 +44,7 @@
         <hr>
 
         <div id="question-2">
-            <?php  echo "<p> <font size = 4>2.Në shkollë e preferoj Biologjinë dhe lëndën Njeriu dhe Natyra.</font> </p>";?>
+        <?php  echo "<p> <font size = 4>2.Riparoj me dëshirë.</font> </p>";?>
             <form id="form-question-2">
                 <button id="second-choice-1" data-points="0" onclick="addPoints('first-choice-1'); disableButtons('second')">Nuk më përshtatet</button>  
                 <button id="second-choice-2" data-points="1" onclick="addPoints('second-choice-2'); disableButtons('second')">Përshtatet pak</button>
@@ -49,8 +57,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>3.I dalloj shumicën e llojeve të bimëve në natyrë.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>3.Interesohem për ndërtime, shtëpi, rrugë, ura etj.</font> </p>";?>
             <form id="form-question-3">
                 <button id="third-choice-1" data-points="0" onclick="addPoints('third-choice-1'); disableButtons('third')">Nuk më përshtatet</button>
                 <button id="third-choice-2" data-points="1" onclick="addPoints('third-choice-2'); disableButtons('third')">Përshtatet pak</button>
@@ -63,8 +70,7 @@
         <hr>
 
         <div id="question-4">
-            <?php  echo "<p> <font size = 4>4.Më interesojnë vetitë e jetesës së shtazëve.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>4.Me dëshirë punoj me materiale si gurë, dru, metal etj.</font> </p>";?>
             <form id="form-question-4">
                 <button id="fourth-choice-1" data-points="0" onclick="addPoints('fourth-choice-1'); disableButtons('fourth')">Nuk më përshtatet</button>
                 <button id="fourth-choice-2"data-points="1" onclick="addPoints('fourth-choice-2'); disableButtons('fourth')">Përshtatet pak</button>
@@ -77,8 +83,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>5.Me dëshirë do të ndihmoja në punët e kopshtit dhe të fushës. </font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>5.Shfrytëzimi i energjive natyrore, ngrohja solare dhe fuqia e erës është i rëndësishëm.</font> </p>";?>
             <form id="form-question-3">
                 <button id="fifth-choice-1"data-points="0" onclick="addPoints('fifth-choice-1'); disableButtons('fifth')">Nuk më përshtatet</button>
                 <button id="fifth-choice-2"data-points="1" onclick="addPoints('fifth-choice-2'); disableButtons('fifth')">Përshtatet pak</button>
@@ -91,8 +96,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>6.Me dëshirë ndihmoj edhe në punë më të rënda që kanë të bëjnë me natyrën.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>6.Me dëshirë do të ndërtoja vet kolektorët solar.</font> </p>";?>
             <form id="form-question-3">
                 <button id="sixth-choice-1"data-points="0" onclick="addPoints('sixth-choice-1'); disableButtons('sixth')">Nuk më përshtatet</button>
                 <button id="sixth-choice-2"data-points="1" onclick="addPoints('sixth-choice-2'); disableButtons('sixth')">Përshtatet pak</button>
@@ -105,8 +109,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>7.Në Biologji interesohem edhe për çështje më specifike (p.sh. lakuriqët etj.).</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>7.Kur bëhen riparime në shtëpi, unë me dëshirë ndihmoj.</font> </p>";?>
             <form id="form-question-3">
                 <button id="seventh-choice-1"data-points="0" onclick="addPoints('seventh-choice-1'); disableButtons('seventh')">Nuk më përshtatet</button>
                 <button id="seventh-choice-2"data-points="1" onclick="addPoints('seventh-choice-2'); disableButtons('seventh')">Përshtatet pak</button>
@@ -119,8 +122,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>8.Me dëshirë do ndihmoja në mbjelljen e bimëve dhe kujdesin e pemëve.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>8.Jam i mirë në montimin e mobileve.</font> </p>";?>
             <form id="form-question-3">
                 <button id="eighth-choice-1"data-points="0" onclick="addPoints('eighth-choice-1'); disableButtons('eighth')">Nuk më përshtatet</button>
                 <button id="eighth-choice-2"data-points="1" onclick="addPoints('eighth-choice-2'); disableButtons('eighth')">Përshtatet pak</button>
@@ -133,8 +135,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>9.Interesohem për kultivimin dhe mbrojtjen e bimëve.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>9.Dua të ndërtoj një punëtori.</font> </p>";?>
             <form id="form-question-3">
                 <button id="ninth-choice-1"data-points="0" onclick="addPoints('ninth-choice-1'); disableButtons('ninth')">Nuk më përshtatet</button>
                 <button id="ninth-choice-2"data-points="1" onclick="addPoints('ninth-choice-2'); disableButtons('ninth')">Përshtatet pak</button>
@@ -147,22 +148,20 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>10.Më pëlqejnë kafshët.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>10.E di si duhet riparuar një rubikon (çeshme) që pikon.</font> </p>";?>
             <form id="form-question-3">
                 <button id="tenth-choice-1"data-points="0" onclick="addPoints('tenth-choice-1'); disableButtons('tenth')">Nuk më përshtatet</button>
                 <button id="tenth-choice-2"data-points="1" onclick="addPoints('tenth-choice-2'); disableButtons('tenth')">Përshtatet pak</button>
                 <br>
                 <button id="tenth-choice-3"data-points="2" onclick="addPoints('tenth-choice-3'); disableButtons('tenth')">Përshtatet</button>
-                <button id="tenth-choice-4"data-points="3" onclick="addPoints('tenth-choice-4'); disableButtons('tenth')">Përshtatet shumë </button>
+                <button id="tenth-choice-4"data-points="3" onclick="addPoints('tenth-choice-4'); disableButtons('tenth')">Përshtatet shumë</button>
             </form>
         </div>
 
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>11.Gëzohem kur shoh kopshte të bukura.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>11.Me kënaqësi do ndërtoja një binë/skenë nga druri.</font> </p>";?>
             <form id="form-question-3">
                 <button id="eleventh-choice-1"data-points="0" onclick="addPoints('eleventh-choice-1'); disableButtons('eleventh')">Nuk më përshtatet</button>
                 <button id="eleventh-choice-2"data-points="1" onclick="addPoints('eleventh-choice-2'); disableButtons('eleventh')">Përshtatet pak</button>
@@ -175,8 +174,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>2.12.Ndjehem mirë kur e lidhë një tufë lulesh.</font> </p>";?>
-
+        <?php  echo "<p> <font size = 4>12.Me dëshirë bashkëpunoj kur ka diçka për të përforcuar, shpuar apo prerë.</font> </p>";?>
             <form id="form-question-3">
                 <button id="twelfth-choice-1"data-points="0" onclick="addPoints('twelfth-choice-1'); disableButtons('twelfth')">Nuk më përshtatet</button>
                 <button id="twelfth-choice-2"data-points="1" onclick="addPoints('twelfth-choice-2'); disableButtons('twelfth')">Përshtatet pak</button>
@@ -189,7 +187,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>13.Ndjehem mirë kur mund të punoj në natyrë (në kopsht apo fushë).</font> </p>";?>
+        <?php  echo "<p> <font size = 4>13.Me intereson se si funksionojnë dyert automatike.</font> </p>";?>
             <form id="form-question-3">
                 <button id="thirteenth-choice-1"data-points="0" onclick="addPoints('thirteenth-choice-1'); disableButtons('thirteenth')">Nuk më përshtatet</button>
                 <button id="thirteenth-choice-2"data-points="1" onclick="addPoints('thirteenth-choice-2'); disableButtons('thirteenth')">Përshtatet pak</button>
@@ -202,7 +200,7 @@
         <hr>
 
         <div id="question-3">
-            <?php  echo "<p> <font size = 4>14. Me dëshirë do ndërtoja një biotop në kopsht.</font> </p>";?>
+        <?php  echo "<p> <font size = 4>14.Që të kursej energji do ti izoloja vet, dyert, dritaret dhe muret.</font> </p>";?>
             <form id="form-question-3">
                 <button id="fourteenth-choice-1"data-points="0" onclick="addPoints('fourteenth-choice-1'); disableButtons('fourteenth')">Nuk më përshtatet</button>
                 <button id="fourteenth-choice-2"data-points="1" onclick="addPoints('fourteenth-choice-2'); disableButtons('fourteenth')">Përshtatet pak</button>
@@ -221,6 +219,11 @@
         <hr>
 
     </div>  
+    <script src="game.php"></script>
+    <script src="game2.php"></script>
+    <script src="game3.php"></script>
+    <script src="game.js"></script>
+
     <div class="container">
         <h2 class="header-two">Nëse keni marr pikët...</h2>
         <h3 class="header-three" >
@@ -231,21 +234,11 @@
         </h3>
     </div>
 </div>
-
     
     <div class="contanier">
         <div id=" home" class="flex-column flex-center">
-            <a href="game2.php" class="btn">Vazhdoni</a>
+            <a href="game5.php" class="btn">Vazhdoni</a>
         </div>
-    </div>
-
-    <div class="audio" style="width:110px; margin-left:auto; position:relative;">
-        <audio controls autostart autoplay loop style="width:100%;"> <source src="audio2.mp3">Ky shfletues nuk e mbështet etiketën audio</audio>
-        </div>
-    
-
-    <script src="game.js"></script>
-
 </body>
 
 </html>

@@ -19,7 +19,7 @@ function sumPoints() {
     position.appendChild(pointsDisplay);
 
     document.getElementById("endButton").disabled = true;
-}
+} 
 
 
 function disableButtons(question) {
@@ -30,7 +30,7 @@ function disableButtons(question) {
 }
 
 
-console.log(document.querySelectorAll('button[id^="first"]'));
+// console.log(document.querySelectorAll('button[id^="first"]'));
 
 console.log(sum);
 
@@ -47,3 +47,4 @@ const reset = function(){
 	document.getElementById('form-user').reset();
 }
 document.addEventListener('DOMContentLoaded', init);
+
