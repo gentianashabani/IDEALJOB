@@ -68,7 +68,7 @@ body {
 	</style>
 	</head>
 	<body>
-    <a href="login.php" style="color: white;">If you alredy have an account, get back to log in by clicking here</a>
+    <a href="login.php" style="color: white;">If you already have an account, get back to log in by clicking here</a>
 		<div class="login">
 			<h1>Sing up</h1>
 			<form action="connect.php" method="post">
