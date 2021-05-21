@@ -39,12 +39,12 @@
 		    <input id="nav-toggle" type="checkbox">
 		    <div class="logo">Puna Ime Ideale</div>
 		    <ul class="links">
-		      <li><a href="index.html">Kryefaqja</a></li>
+		      <li><a href="index.php">Kryefaqja</a></li>
 		      <li><a href="cv.html">Krijo CV</a></li>
-		      <li><a href="quiz.html">Kuiz</a></li>
-		      <li><a href="shpalljePune.html">Shpallje</a></li>
-		      <li><a href="keshilla.html">K&eumlshilla</a></li>
-		      <li><a href="index.html#aboutus">Rreth nesh</a></li>
+		      <li><a href="quiz.php">Kuiz</a></li>
+		      <li><a href="shpalljePune.php">Shpallje</a></li>
+		      <li><a href="keshilla.php">K&eumlshilla</a></li>
+		      <li><a href="index.php#aboutus">Rreth nesh</a></li>
 		    </ul>
 		    <label for="nav-toggle" class="icon-burger">
 		      <div class="line"></div>
@@ -71,12 +71,12 @@
 				    <label for="fname">Emri:</label>
 		  			<input type="text" id="fname" name="fname" onkeyup="showHint(this.value)"><br>
 	      		</form>
-			<p><br>Suggestions: <span id="txtHint"></span></p>
+			<p>Suggestions: <span id="txtHint"></span></p>
 		</div>
 		<div class="body" >
-			<ruby>
-		    	<rp>(</rp><rt>Premium</rt><rp>)</rp>
-		    </ruby>
+			<?php
+				echo "<h1>Premium</h1>";
+			?>
 
 			<div class="card-container" id="card-container"></div>	
 		</div>
@@ -98,11 +98,11 @@
 				    <h2>Linqet</h2>
 
 			        <ul class="box">
-			          <li> <a href="index.html">Kryefaqja</a> </li>
+			          <li> <a href="index.php">Kryefaqja</a> </li>
 			          <li> <a href="cv.html">Krijo CV</a> </li>
-			          <li> <a href="quiz.html">Kuiz</a> </li>
-			          <li> <a href="shpalljePune.html">Shpallje</a> </li>
-			          <li> <a href="keshilla.html">K&eumlshilla</a> </li>
+			          <li> <a href="quiz.php">Kuiz</a> </li>
+			          <li> <a href="shpalljePune.php">Shpallje</a> </li>
+			          <li> <a href="keshilla.php">K&eumlshilla</a> </li>
 			        </ul>
 		      	</li>
 
@@ -114,7 +114,7 @@
 			              href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6484076,21.1665845,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x13549ec1b5430613:0x76c9353194f18686!2sUniversiteti+i+Prishtin%C3%ABs!8m2!3d42.6484076!4d21.1671317!3m4!1s0x13549ec1b5430613:0x76c9353194f18686!8m2!3d42.6484076!4d21.1671317">Rr.
 			              "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
 			          <li> <a href="https://contacts.google.com/">Tel: +38345463922</a> </li>
-			         <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: punaideale@gmail.com</a></li>
+			         <li> <a href="mailto:punaideale@gmail.com">Email: punaideale@gmail.com</a></li>
 			        </ul>
 			    </li>
 	    	</ul>
