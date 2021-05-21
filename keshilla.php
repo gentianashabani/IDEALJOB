@@ -470,7 +470,7 @@ printf("%s <br>pick one that doesn’t need escaping from", $text);
               href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6484076,21.1665845,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x13549ec1b5430613:0x76c9353194f18686!2sUniversiteti+i+Prishtin%C3%ABs!8m2!3d42.6484076!4d21.1671317!3m4!1s0x13549ec1b5430613:0x76c9353194f18686!8m2!3d42.6484076!4d21.1671317">Rr.
               "George Bush", Nr.31, 10 000 Prishtinë, Republika e Kosovës</a></li>
           <li> <a href="https://contacts.google.com/">Tel: +38345463922</a> </li>
-          <li> <a href="mailto:gentrim.canolli@student.uni-pr.edu">Email: gentrim.canolli@student.uni-pr.edu</a> </li>
+          <li> <a href="mailto:punaideale@gmail.com">Email: gentrim.canolli@student.uni-pr.edu</a> </li>
         </ul>
       </li>
     </ul>
