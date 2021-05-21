@@ -244,6 +244,66 @@ Substring($str);
    ?>
 </div>
   </div><br><br>
+  <div  style=" display: flex;
+  justify-content: center;">
+    <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+<?php 
+class quotee{
+  // Properties
+  var $name;
+  var $color;
+
+  // Methods
+  function __construct($name, $work) {
+    $this->name = $name;
+    $this->work = $work; 
+  }
+  function __destruct() {
+    echo "No metter where you are from,<br> your {$this->name} are {$this->work}."; 
+  }
+}
+
+   $str = new quotee("dreams", "valid");
+   $str->__destruct();
+    
+ ?>
+
+</div>
+    <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+<?php 
+echo "An ideal job <br> Is where u can't be <br> Replaced ";
+ ?>
+
+</div>
+    <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+<?php 
+$str = "Don’t pick a job with great vacation time, ";
+printf("%s <br>pick one that doesn’t need escaping from", $str);
+ ?>
+
+</div>
+  </div>
 
   <h2 id="dragDrop">&#199;far&euml ke m&eumlsuar nga k&eumlshillat tona?</h2>
   <div class="drop">
