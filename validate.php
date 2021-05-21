@@ -14,7 +14,7 @@ if(isset($_POST['login'])){
             $_SESSION['email']=$email;
             header("location: index.php");
     }else{
-        echo "Email or Password is invalid. <br> click here to <a href='login.php'> Try again! </a>";
+        echo "Email or Password is invalid. <br> click here to <a href='singup.php'> Create account </a>";
     }
 }
     else{
