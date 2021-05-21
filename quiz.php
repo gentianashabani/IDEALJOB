@@ -33,7 +33,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="contanier">
         <div id=" home" class="column center">
             <p style="font-size:larger; margin-bottom: 9rem;">Luaj kuiz </p>
-            <a href="game.html" class="book">Filloni</a>
+            <a href="game.php" class="book">Filloni</a>
             <div class="audio" style="width:110px; margin-left:auto; position:relative; margin-top: 20rem;">
                  <audio controls autoplay style="width:100%;"> <source src="audio1.mp3">Ky shfletues nuk e mbështet etiketën audio</audio>
                  </div>
