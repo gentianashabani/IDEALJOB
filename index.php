@@ -1,6 +1,9 @@
+<?php 
+  session_start();
+  echo "<a href='logout.php'> <p align='left'> <font color=white font face='arial' size='5px'>Log out</font></p></a>";
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Puna ime ideale</title>
@@ -61,7 +64,6 @@
 </style>
 
 <body>
-
   <nav>
     <input id="nav-toggle" type="checkbox">
     <div class="logo">Puna ime ideale</div>

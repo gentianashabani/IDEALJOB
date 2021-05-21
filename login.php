@@ -50,6 +50,14 @@ body {
     margin-bottom: 20px;
     padding: 0 15px;
 }
+.login form input[type="checkbox"], .login form input[type="pointer"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    background-color: #3274d6;
+}
 .login form input[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -70,17 +78,29 @@ body {
     <body>
         <div class="login">
             <h1>Login</h1>
-            <form action="index.php" method="post">
+            <form action="validate.php" method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
-                <input type="text" name="username" placeholder="username" id="username" required>
+                <input type="text" name="email" placeholder="username" id="email" required>
                 <label for="password">
                     <i class="fas fa-lock"></i>
                 </label>
-                <input type="password" name="password" placeholder="Password" id="password" required>
-                <input type="submit" value="Login">
+                <input type="password" name="password" placeholder="Password" id="pass" required>
+                <input type="checkbox" name="remember"placeholder="Remember me" id ="remember" required>
+                <input type="submit" name="login" value="Login">
             </form>
         </div>
+
     </body>
 </html>
+<?php
+    if(isset($_COOKIE['email']) and isset($_COOKIE['pass']) ){
+    $email=$_COOKIE['email'];
+    $pass=$_COOKIE['pass'];
+    echo "<script>
+            document.getElementbyId('email').value='$email';
+            document.getElementbyId('pass').value='$pass';
+            </script>";
+    }
+    ?>
