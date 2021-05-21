@@ -62,7 +62,7 @@
 
 <body>
 
-  <nav>
+<nav>
     <input id="nav-toggle" type="checkbox">
     <div class="logo">Puna ime ideale</div>
     <ul class="links">
@@ -73,6 +73,7 @@
       <li><a href="keshilla.php">K&eumlshilla</a></li>
       <li><a href="#aboutus">Rreth nesh</a></li>
       <li><a href="login.php">Login</a></li>
+      <li><a href="profile.php">Profili</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -118,6 +119,13 @@
       <div class="txt">
         <h1>Log in</h1>
         <p>Kyqu !<br>M&eumlso shum&eumlçka rreth intervistave t&euml pun&eumls etj...</p>
+      </div>
+      <img src="img/img1.jpg" style="width: 100%; height: 100%;">
+    </div>
+<div class="myslide fade">
+      <div class="txt">
+        <h1>Profili</h1>
+        <p>Shiko profilin tuaj!<br>M&eumlso shum&eumlçka rreth intervistave t&euml pun&eumls etj...</p>
       </div>
       <img src="img/img1.jpg" style="width: 100%; height: 100%;">
     </div>
