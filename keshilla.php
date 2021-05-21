@@ -307,6 +307,52 @@ printf("%s <br>pick one that doesn’t need escaping from", $text);
  ?>
 
 </div>
+    <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+<?php
+$fjalia = 'Find out what you like doing best, and gjeje  to pay you for doing it.';
+$pattern = '/gjeje/i';
+echo preg_replace($pattern, 'get someone', $fjalia);
+?>
+
+</div>
+
+  </div><br>
+  <div  style=" display: flex;
+  justify-content: center;">
+    <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+              <?php  
+$arr=array ('A','job','is','who','you','are');  
+echo implode(" ",$arr);  
+?>  
+    </div>
+       <div style="width:400px; height: auto; background-color: #E1E5F3; font-size: 20px; border:6px solid #5183BE;border-style:ridge; box-shadow:
+             0 -5px 7px -5px #143097,
+              0 7px 7px -5px #143097,
+              7px 0 7px -5px #143097;
+              margin-left:25px;
+              margin-right:25px;
+              text-align:center;
+              ">
+    <?php
+$f = "zcDon't stop until you're proudf";
+echo trim($f,"zcf");
+?>
+    </div>
+
   </div>
 
   <h2 id="dragDrop">&#199;far&euml ke m&eumlsuar nga k&eumlshillat tona?</h2>
