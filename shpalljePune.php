@@ -39,12 +39,12 @@
 		    <input id="nav-toggle" type="checkbox">
 		    <div class="logo">Puna Ime Ideale</div>
 		    <ul class="links">
-		      <li><a href="index.html">Kryefaqja</a></li>
+		      <li><a href="index.php">Kryefaqja</a></li>
 		      <li><a href="cv.html">Krijo CV</a></li>
-		      <li><a href="quiz.html">Kuiz</a></li>
-		      <li><a href="shpalljePune.html">Shpallje</a></li>
-		      <li><a href="keshilla.html">K&eumlshilla</a></li>
-		      <li><a href="index.html#aboutus">Rreth nesh</a></li>
+		      <li><a href="quiz.php">Kuiz</a></li>
+		      <li><a href="shpalljePune.php">Shpallje</a></li>
+		      <li><a href="keshilla.php">K&eumlshilla</a></li>
+		      <li><a href="index.php#aboutus">Rreth nesh</a></li>
 		    </ul>
 		    <label for="nav-toggle" class="icon-burger">
 		      <div class="line"></div>
