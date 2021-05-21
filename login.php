@@ -50,14 +50,6 @@ body {
     margin-bottom: 20px;
     padding: 0 15px;
 }
-.login form input[type="checkbox"], .login form input[type="pointer"] {
-    width: 310px;
-    height: 50px;
-    border: 1px solid #dee0e4;
-    margin-bottom: 20px;
-    padding: 0 15px;
-    background-color: #3274d6;
-}
 .login form input[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -73,34 +65,32 @@ body {
     background-color: #2868c7;
     transition: background-color 0.2s;
 }
+.login form input[type="checkbox"], .login form input[type="pointer"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    background-color: #3274d6;
+}
     </style>
     </head>
     <body>
         <div class="login">
             <h1>Login</h1>
-            <form action="validate.php" method="post">
+            <form action="authenticate.php" method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
-                <input type="text" name="email" placeholder="username" id="email" required>
+                <input type="text" name="username" placeholder="Username" id="username" required>
                 <label for="password">
                     <i class="fas fa-lock"></i>
                 </label>
-                <input type="password" name="password" placeholder="Password" id="pass" required>
+                <input type="password" name="password" placeholder="Password" id="password" required><br>
+
                 <input type="checkbox" name="remember"placeholder="Remember me" id ="remember" required>
-                <input type="submit" name="login" value="Login">
+                <input type="submit" value="Login" name="login">
             </form>
         </div>
-
     </body>
 </html>
-<?php
-    if(isset($_COOKIE['email']) and isset($_COOKIE['pass']) ){
-    $email=$_COOKIE['email'];
-    $pass=$_COOKIE['pass'];
-    echo "<script>
-            document.getElementbyId('email').value='$email';
-            document.getElementbyId('pass').value='$pass';
-            </script>";
-    }
-    ?>
