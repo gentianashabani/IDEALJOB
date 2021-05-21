@@ -22,6 +22,7 @@
         <li><a href="shpalljePune.html">Shpallje</a></li>
         <li><a href="keshilla.html">K&eumlshilla</a></li>
         <li><a href="index.html#aboutus">Rreth nesh</a></li>
+        
       </ul>
       <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -38,7 +39,8 @@
      ?>
        <p>
       <img class="inimg" src="img/interview1.jpg" alt="intervista1">
-      Intervista është proces i komunikimit në dy drejtime me rekrutuesit dhe aplikuesit. Në
+      <?php  
+      echo "<br><h3>Intervista është proces i komunikimit në dy drejtime me rekrutuesit dhe aplikuesit. Në
       këtë fazë të procesit të selektimit, udhëzimet, personaliteti dhe rezultatet kanë rëndësi të
       njëjtë. Për këtë arsye, është e nevojshme të bëhet dallimi mes llojeve të ndryshme të
       intervistave.
@@ -46,7 +48,8 @@
       koha për marrjen e informatës që nuk mund të merret askund tjetër.
       Intervistat mund të dështojnë nëse keni shumë pak eksperiencë në këtë sens ose pak
       praktikë, por nëse përgatiteni për intervistën mund të ndiheni më konfident dhe ndoshta
-      do të dilni më mirë.
+      do të dilni më mirë. </h3>";
+        ?>
     </p>
   </div>
   <hr>
@@ -299,8 +302,8 @@ echo "An ideal job <br> Is where u can't be <br> Replaced ";
               text-align:center;
               ">
 <?php 
-$str = "Don’t pick a job with great vacation time, ";
-printf("%s <br>pick one that doesn’t need escaping from", $str);
+$text = "Don’t pick a job with great vacation time, ";
+printf("%s <br>pick one that doesn’t need escaping from", $text);
  ?>
 
 </div>
