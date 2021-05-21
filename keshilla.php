@@ -71,32 +71,32 @@ echo "<p>Ndonëse për shumë njerëz veshëmbathja në një intervistë pune nu
      ?>
     
     <br>
-    <div class="veshjeMF">
-    
-        
-        <?php 
-        $m = "<b>-P&eumlr meshkuj<br></b>";
-          $f = str_replace("meshkuj" , "vajza" ,$m);
-          echo $m;
-          echo "<ul>";
-          echo "<li>Kostum me ngjyra të mbyllta si e zezë apo e hirtë<br>";
-          echo "<li>Këmishë me mëngë të gjata, me ngjyrë të bardhë ose e kombinuar me kostumin<br>";
-          echo "<li>Rrip lëkure<br>";
-          echo "<li>Kravatë<br>";
-          echo "<li>Çorape të errëta dhe këpucë lëkure<br>";
-          echo "</ul><br>";
-          echo $f;
+    <div class="veshjeMF">    
+          <?php 
+          $m = "<b>P&eumlr meshkuj<br></b>";
+            $f = str_replace("meshkuj" , "vajza" ,$m);
+            echo $m;
+
+            $veshjetm = array("Kostum me ngjyra të mbyllta si e zezë apo e hirtë", "Këmishë me mëngë të gjata, me ngjyrë të bardhë ose e kombinuar me kostumin", "Rrip lëkure", "Çorape të errëta dhe këpucë lëkure");
+            $arrlength = count($veshjetm);
             echo "<ul>";
-          echo "<li>Veshje me ngjyrë të zezë ose gri <br>";
-          echo "<li>Kostume nën gjunjë<br>";
-          echo "<li>Bluzë të kombinuar me kostumin<br>";
-          echo "<li>Këpucë më zyrtare<br>";
-          echo "<li>Grim të lehtë (nëse përdorni)<br>";
-          echo "<li>Jo shumë bizhuteri<br>";
-          echo "</ul><br>"; 
+            for($x = 0; $x < $arrlength; $x++) {
+              echo "<li>$veshjetm[$x]<br>";
+            }
+            echo "</ul><br>";
+
+            echo $f;
+
+            $veshjetf = array("Veshje me ngjyrë të zezë ose gri", "Kostume nën gjunjë", "Bluzë të kombinuar me kostumin", "Këpucë më zyrtare", "Grim të lehtë (nëse përdorni)", "Jo shumë bizhuteri");
+            $arrlength = count($veshjetf);
+
+            echo "<ul>";
+            for($x = 0; $x < $arrlength; $x++) {
+              echo "<li>$veshjetf[$x]<br>";
+            }
+            echo "</ul><br>"; 
           ?>
-      
-    </div>
+      </div>
   </div>
 
     </div>
